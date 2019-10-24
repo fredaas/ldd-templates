@@ -1,1 +1,0 @@
-cmd_/home/fredaas/Desktop/dev/ldd-template/xyz-module-0/xyz_module_0.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/fredaas/Desktop/dev/ldd-template/xyz-module-0/xyz_module_0.ko /home/fredaas/Desktop/dev/ldd-template/xyz-module-0/xyz_module_0.o /home/fredaas/Desktop/dev/ldd-template/xyz-module-0/xyz_module_0.mod.o ;  true

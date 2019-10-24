@@ -17,5 +17,9 @@ launch :
 	sudo insmod xyz_module_0.ko
 
 .PHONY : clean
-clean :
-	rm -rf .cache.mk *.order *.symvers *.mod* *.tmp_versions *.ko* *.o main xyz_module_0
+clean : clean-module
+	rm -rf *.o main xyz_module_0
+
+.PHONY : clean-module
+clean-module :
+	rm -rf .*.mk *.order *.symvers *.mod* *.ko* .tmp_versions .*.cmd
